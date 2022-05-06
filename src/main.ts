@@ -8,7 +8,7 @@ async function bootstrap() {
   // app.useGlobalInterceptors(new ExcludeNullInterceptor());
   app.use(cookieParser());
   app.enableCors({
-    origin: [process.env.ORIGIN, '*','http://localhost:3000', '*:*'],
+    origin: [process.env.ORIGIN, '*', 'http://localhost:3000', '*:*'],
     // origin: ['https://avc-team.com.ua'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     preflightContinue: false,
@@ -18,8 +18,8 @@ async function bootstrap() {
 
   config.update({
     region: 'eu-central-1',
-    accessKeyId: 'AKIATGDPX3MLKOV2HOYY',
-    secretAccessKey: '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',
+    accessKeyId: 'AKIATGDPX3MLLC6ZO3FX',
+    secretAccessKey: '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',
   });
 
   const port = process.env.PORT || 8080;
